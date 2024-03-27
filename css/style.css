@@ -43,15 +43,14 @@ padding-right: 24px;
         height: 500px; 
         width: 100%; 
         align-items: center;
-        padding-left: 75px;
-        border-radius: 25%;
-        #img {
+        padding-left: 5px;
+        .img-slideshow {
             height: 300px;
             width: 95%;
-            border-radius: 25%;
-            background-image: url(https://awsimages.detik.net.id/community/media/visual/2023/07/19/ilustrasi-pulau-bali_169.jpeg?w=1200);
-            background-repeat: no-repeat;
-            background-size: cover;}
+            border-radius: 20%;
+        }
+        
+    }
             
        .profile-container{
         display: flex;
@@ -85,6 +84,8 @@ padding-right: 24px;
             background-color: black;
             color: white;
         }
-        
-    }
+     }
+     .our-package {
+         padding-top:;
+     }
 }
