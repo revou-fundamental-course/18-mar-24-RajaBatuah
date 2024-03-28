@@ -3,6 +3,7 @@
     <head>
         <title>assignment-raja</title>
         <link rel="stylesheet" href="css/style.css">
+
     </head>
     <body>
         <header class="header-container">
@@ -37,28 +38,6 @@
                                <button onclick="plusDivs(-1)">previous</button>
                                <button onclick="plusDivs(1)">next</button>
                               </div>
-                              <script>
-                                   var slideIndex = 1;
-                                   showDivs(slideIndex);
-                                   
-                                  function plusDivs(n) {
-                                        showDivs((slideIndex += n))
-                                  }
-                                   
-                                   function showDivs(n) {
-                                        var i;
-                                        var imgList = document.getElementsByClassName("img-slideshow");
-                                        if (n > imgList. length) slideIndex=1
-                                        else if (n < 1) slideIndex = imgList. length
-                                        for(i = 0; i < imgList. length; i++) {
-                                             imgList[i].style.display = "none"
-                                        }
-                                        imgList[slideIndex - 1].style.display ="block"
-                                    }
-                                    setInterval(() => {
-                                        plusDivs(1);
-                                    }, 3000);
-                              </script>
                               <p id="comment">"liburanku di bali"</p>
                               <section class="profile-container">
                                    <section id="photo-profile"></section>
@@ -78,25 +57,18 @@
                                    </ol>
                               </section>
                     </section>
-                     <section class="form">
-                                <header>
-                                    <h3><b>isi form dibawah ini!</b></h> 
-                                    <h4 style="font-weight: 200;"><i>hasil akan diumumkan pada hari jum'at tanggal 29 maret 2024</i></h>
-                                </header>
-                                <form name="datadiri" onsubmit="return validateform()">
-                                    <label for="name-input">name</label></br>
-                                    <input id="name-input" type="text" placeholder="name" name="name-input"><br>
-                                    <br>
-                                    <label for="age">age</label><br>
-                                    <input id="age" type="number" placeholder="age" name="age input"><br>
-                                    <br>
-                                    <label for="email">email</label><br>
-                                    <input id="email" type="text"><br>
-                                    <br>
-                                    <button type="button" id="button">send</button>
-                                    <p id="error-name">must</p>
-                              </form> 
-                                 <h1 style="font-size: larger;"><b>GOOD LUCK!</b></h1>
+                    <section class="form">
+                    <h3><b>isi form dibawah ini!</b></h> 
+                      <h4 style="font-weight: 200;"><i>hasil akan diumumkan pada hari jum'at tanggal 29 maret 2024</i></h>
+                  </header>
+                  <form name="myForm" action="" onsubmit="return validateForm()" method="get">
+                    Name: <br> <input type="text" name="fname"> <br>
+                    <p>age (minimum 18)</p>
+                    <input id="numb"> <br>
+                    email: <br> <input type="text" name="email"> <br>
+                    <input type="submit" value="Submit">
+                  </form>
+                   <h1 style="font-size: larger;"><b>GOOD LUCK!</b></h1>                             
                      </section> 
                 </section>
          </section>
